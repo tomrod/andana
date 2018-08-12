@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Welcome to andana.me
 
-You can use the [editor on GitHub](https://github.com/tomrod/andana/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+*Andana*. An evocative word. One you think you may have heard before. You toss it about mentally, seeking context and syntax. At one level it feels heavy like Sourdough toast after a long walk to Pier 39  -- satisfying, surprisingly salty, even a little bitter. In another corner of your mind the word teases, frothily, like dandelion days of summer. Surely you've heard this term before. The memories begin flooding, seeking a connection and generating a mystery.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Reality differs from your pattern recognition: you probably haven't come across this term. (In no way does that diminish its importance). In part of the world (chiefly the Visayan Islands), *andana* takes a wonderfully rich meaning: **narrative**. 
 
-### Markdown
+[Storytelling is part of what makes us human.](https://www.forbes.com/sites/stevedenning/2012/03/09/the-science-of-storytelling/#4f9a68502d8a) You receive an tell stories daily. Sometimes they nest themselves to share something [sublime](https://en.wikipedia.org/wiki/Allegory_of_the_Cave), other times they share something [highly technical](https://en.wikipedia.org/wiki/Markov_chain#Gambling). In no way is the narrative less important to the latter. [Narrative is essential.](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/#16820dbf52ad) And often, storytelling is a lost art in the data science space -- yet, narratives run decision making in our world. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-----
 
-```markdown
-Syntax highlighted code block
+This blog is dedicated to improving narrative in data science. The topics I plan to address (though certainly not limit to) are
 
-# Header 1
-## Header 2
-### Header 3
+1. Successful communication of data science findings--demystifying the technical, democratizing the hypothesis generation. Empowering the non-technical may put practicing data science clerics into 
 
-- Bulleted
-- List
+2. Tools that assist the narrative
 
-1. Numbered
-2. List
+3. Translating the science of Causal Inference into Data Science methods
 
-**Bold** and _Italic_ and `Code` text
+I welcome your assistance in this journey. Email me @ tom(at)andana.me.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tomrod/andana/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
