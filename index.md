@@ -4,7 +4,7 @@
 
 Reality differs from your pattern recognition: you probably haven't come across this term. (In no way does that diminish its importance). In part of the world (chiefly the Visayan Islands), *andana* takes a wonderfully rich meaning: **narrative**. 
 
-[Storytelling is part of what makes us human.](https://www.forbes.com/sites/stevedenning/2012/03/09/the-science-of-storytelling/#4f9a68502d8a) You receive an tell stories daily. Sometimes they nest themselves to share something [sublime](https://en.wikipedia.org/wiki/Allegory_of_the_Cave), other times they share something [highly technical](https://en.wikipedia.org/wiki/Markov_chain#Gambling). In no way is the narrative less important to the latter. [Narrative is essential.](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/#16820dbf52ad) And often, storytelling is a lost art in the data science space -- yet, narratives run decision making in our world. 
+[Storytelling is part of what makes us human.](https://www.forbes.com/sites/stevedenning/2012/03/09/the-science-of-storytelling/#4f9a68502d8a) You participate in and tell stories daily. Sometimes they nest themselves to share something [sublime](https://en.wikipedia.org/wiki/Allegory_of_the_Cave), other times they share something [highly technical](https://en.wikipedia.org/wiki/Markov_chain#Gambling). In no way is the narrative less important to the latter. [Narrative is essential.](https://www.forbes.com/sites/brentdykes/2016/03/31/data-storytelling-the-essential-data-science-skill-everyone-needs/#16820dbf52ad) And often, storytelling is a lost art in the data science space -- yet, narratives run decision making in our world. 
 
 -----
 
