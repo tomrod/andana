@@ -17,5 +17,3 @@ This blog is dedicated to improving narrative in data science. The topics I plan
 3. Translating the science of Causal Inference into Data Science methods
 
 I welcome your assistance in this journey. Email me @ tom(at)andana.me.
-
-
