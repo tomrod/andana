@@ -21,6 +21,7 @@ This blog is dedicated to improving narrative in data science. The topics I plan
 
 I welcome your assistance in this journey. Email me @ narrative.wrangler(at)gmail.
 
+-----
 
   {% for post in site.posts %}
   <article>
