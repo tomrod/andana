@@ -19,7 +19,7 @@ where
 - $$X_i$$ is a $$k{\times}1$$ vector of independent data
 - $$\epsilon_i$$ is normally distributed model error, $$\epsilon \sim N(0,\sigma^2)$$
 
-Then, to find coefficients $$\beta$$, you find the expected value $$E(Y\|X)$$. This is equivalent to minimizing the sum of squared errors, $$\min_{\beta} \|\|Y-X\beta\|\|$$.
+Then, to find coefficients $$\beta$$, you find the expected value $$E(Y\|X)$$. This is equivalent to minimizing the sum of squared errors, $$\min_{\beta} \|Y-X\beta\|$$.
 
 Linear regression's usefulness comes from it being the best linear unbiased estimator when a set of assumptions known as the [Gauss-Markov assumptions](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem) are satisfied. Basically:
 
@@ -31,7 +31,7 @@ What does "Best Least Unbiased Estimator" mean? It means the statistical estimat
 
 If you're coming from another statistical language like R, Python can sometimes feel cumbersome. However, Python excels at producing code reproducibility--allowing for workflow standardization. This post will review Python's common least squares approaches, and provide some boilerplate workflow code.
 
-For this exercise we will use linear regression to build a model of *miles per gallon* (mpg) predicted by horsepower, engine cylinders, engine displacement, weight, acceleration, model year, origin, and car model. The data is sourced from the University of California Irvine's Donald Bren School of Information and Computer Science[^1] and has been used numerous times.[^2]
+For this exercise we will use linear regression to build a model of *miles per gallon* (mpg) predicted by horsepower, engine cylinders, engine displacement, weight, acceleration, model year, origin, and car model. The data is sourced from the University of California Irvine's Donald Bren School of Information and Computer Science[^1] and has been used numerous times[^2].
 
 ## Prequisites
 
@@ -93,7 +93,7 @@ train = df_clean[msk]
 test = df_clean[~msk]
 ```
 
-Multiple models are generated using `statsmodels`' formula designation. Each of these strings will server as a model. the term `C( variable, Sum)` forces the model to use a Categorical designation.[^3] More specifically, the `Sum` input uses Deviation Coding, which separates the effect of the categorical variable classes from the intercept. A hold out is still used -- in this case, the value of the hold-out coefficient is the negative sum of all the other coefficients within the group. So for example, an 8-cylinder's MPG average will be the sum area of origin 3 will be area of origin 1 and 2's coefficient multiplied by `-1`.
+Multiple models are generated using `statsmodels`' formula designation. Each of these strings will server as a model. the term `C( variable, Sum)` forces the model to use a Categorical designation[^3]. More specifically, the `Sum` input uses Deviation Coding, which separates the effect of the categorical variable classes from the intercept. A hold out is still used -- in this case, the value of the hold-out coefficient is the negative sum of all the other coefficients within the group. So for example, an 8-cylinder's MPG average will be the sum area of origin 3 will be area of origin 1 and 2's coefficient multiplied by `-1`.
 
 ```python
 models = {
@@ -148,7 +148,7 @@ class Validation_fits():
             return 1 - self.ssres(test=test)/sum((test[self.regressand]-m)**2)
 ```
 
-This class is used across each model to calculate the mean-squared error. Note that the MSE is directly calculated. `statsmodel` includes an MSE calculation, but normalizes by the model degrees of freedom rather than the number of observations. For our comparison purposes, we keep the MSE denominator as the number of observations.[^4]
+This class is used across each model to calculate the mean-squared error. Note that the MSE is directly calculated. `statsmodel` includes an MSE calculation, but normalizes by the model degrees of freedom rather than the number of observations. For our comparison purposes, we keep the MSE denominator as the number of observations[^4].
 
 ```python
 train_mse = []
@@ -190,10 +190,10 @@ Each component is modular -- the data used, the models ran, the model methodolog
 ## Footnotes
 
 
-[^1] Dua, D. and Karra Taniskidou, E. (2017). [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
+[^1]: Dua, D. and Karra Taniskidou, E. (2017). [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
-[^2] [http://archive.ics.uci.edu/ml/datasets/Auto+MPG](http://archive.ics.uci.edu/ml/datasets/Auto+MPG)
+[^2]: [http://archive.ics.uci.edu/ml/datasets/Auto+MPG](http://archive.ics.uci.edu/ml/datasets/Auto+MPG)
 
-[^3] Categorical handling is actually one of the harder items to keep straight. It is good practice to double check this item during testing and code reviews. The Python package [`statsmodel`](https://www.statsmodels.org/dev/contrasts.html) handles at least four different types of categorical coding at time of writing.
+[^3]: Categorical handling is actually one of the harder items to keep straight. It is good practice to double check this item during testing and code reviews. The Python package [`statsmodel`](https://www.statsmodels.org/dev/contrasts.html) handles at least four different types of categorical coding at time of writing.
 
-[^4] This means our measurement is biased (but consistent!) for the training MSE statistics. However, there is a tradeoff with interpretation. In order for the training and testing data to be compared with an "apples-to-apples" comparison, the normalization of the model fit should be consistent, such as with the number of observations. Using the residual degrees of freedom would result in a disparate measure between the training data and any data with a different number of observations.
+[^4]: This means our measurement is biased (but consistent!) for the training MSE statistics. However, there is a tradeoff with interpretation. In order for the training and testing data to be compared with an "apples-to-apples" comparison, the normalization of the model fit should be consistent, such as with the number of observations. Using the residual degrees of freedom would result in a disparate measure between the training data and any data with a different number of observations.
