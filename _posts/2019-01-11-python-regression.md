@@ -54,7 +54,7 @@ The data source will be downloaded from the linked external site in a fixed-widt
 6. acceleration:  continuous
 7. model year:    multi-valued discrete
 8. origin:        multi-valued discrete
-9. car name:      string (unique for each instance)
+9. car name:      string \(unique for each instance\)
 
 MPG (miles per gallon) is the regressand in our study. The remainder are regressors. Of these, 'multi-valued discrete' variables will be transformed to categorical variables. We will also drop all bad data represented by `np.nans`. We initialize and create the data using the following code.
 
