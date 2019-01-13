@@ -19,11 +19,11 @@ I welcome your assistance in this journey. Email me @ narrative.wrangler(at)gmai
 
   {% for post in site.posts %}
   <article>
-    <h2>
+    <h3>
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
-    </h2>
-    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    </h3>
   </article>
 {% endfor %}
