@@ -44,7 +44,7 @@ For this exercise we will use linear regression to build a model of miles per ga
 
 ## Setting up data
 
-The data source will be downloaded from the linked external site in a fixed-width format \(fwf\). It consists of the following fields:
+The data source will be downloaded from the linked external site in a fixed-width format $$(fwf)$$. It consists of the following fields:
 
 1. mpg:           continuous
 2. cylinders:     multi-valued discrete
