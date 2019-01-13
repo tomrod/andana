@@ -15,3 +15,16 @@ This blog is dedicated to improving narrative in data science. The topics I plan
 3. Translating the science of Causal Inference into Data Science methods
 
 I welcome your assistance in this journey. Email me @ narrative.wrangler(at)gmail.
+
+
+  {% for post in site.posts %}
+  <article>
+    <h2>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+    {{ post.content }}
+  </article>
+{% endfor %}
