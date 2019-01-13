@@ -22,8 +22,7 @@ I welcome your assistance in this journey. Email me @ narrative.wrangler(at)gmai
     <h3>
       <a href="{{ post.url }}">
         {{ post.title }}
-      </a>
-      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+      </a> | <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time> 
     </h3>
   </article>
 {% endfor %}
