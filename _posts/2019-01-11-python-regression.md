@@ -24,28 +24,27 @@ Then, to find coefficients $$\beta$$, you find the expected value $$E(Y\|X)$$. T
 Linear regression's usefulness comes from it being the best linear unbiased estimator when a set of assumptions known as the [Gauss-Markov assumptions](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem) are satisfied. Basically:
 
 - Irreducible model error are mean zero
-- Model errors conditioned on explanatory variables are mean zero ( exogeneity )
+- Model errors conditioned on explanatory variables are mean zero \( exogeneity \)
 - Errors are homoskedastic -- at different regions of the input space error distributions are equal
 
 What does "Best Least Unbiased Estimator" mean? It means the statistical estimator with the least variance.
 
 If you're coming from another statistical language like R, Python can sometimes feel cumbersome. However, Python excels at producing code reproducibility--allowing for workflow standardization. This post will review Python's common least squares approaches, and provide some boilerplate workflow code.
 
-For this exercise we will use linear regression to build a model of *miles per gallon* (mpg) predicted by horsepower, engine cylinders, engine displacement, weight, acceleration, model year, origin, and car model. The data is sourced from the University of California Irvine's Donald Bren School of Information and Computer Science[^1] and has been used numerous times[^2].
+For this exercise we will use linear regression to build a model of miles per gallon \(mpg\) predicted by horsepower, engine cylinders, engine displacement, weight, acceleration, model year, origin, and car model. The data is sourced from the University of California Irvine's Donald Bren School of Information and Computer Science[^1] and has been used numerous times[^2].
 
 ## Prequisites
 
-- Python 3
-  - `pandas` (0.23.0)
-  - `statsmodel` (0.9.0)
-  - `matplotlib` (2.2.2)
 - Internet access
 - Working knowledge of linear regression
-
+- Python 3
+  - `pandas` \(0.23.0\)
+  - `statsmodel` \(0.9.0\)
+  - `matplotlib` \(2.2.2\)
 
 ## Setting up data
 
-The data source will be downloaded from the linked external site in a fixed-width format (fwf). It consists of the following fields:
+The data source will be downloaded from the linked external site in a fixed-width format \(fwf\). It consists of the following fields:
 
 1. mpg:           continuous
 2. cylinders:     multi-valued discrete
@@ -82,7 +81,7 @@ df_clean = df.dropna()
 
 ## Generating training and validation datasets
 
-We use an 80/20% split for training and validation. There are many ways to approach this. As the data is small, a simple choice rule using a uniform random varible `np.random.rand`. Three random vectors are also generated to add noise to highlight that stuffing a training set does result in higher fit on the training set, but does not improve fit on the testing set.
+We use an 80/20% split for training and validation. There are many ways to approach this. As the data is small, a simple choice rule using a uniform random variable `np.random.rand`. Three random vectors are also generated to add noise to highlight that stuffing a training set does result in higher fit on the training set, but does not improve fit on the testing set.
 
 ```python
 msk = np.random.rand(len(df_clean)) < .8
@@ -190,7 +189,6 @@ Each component is modular -- the data used, the models ran, the model methodolog
 
 
 ## Footnotes
-
 
 [^1]: Dua, D. and Karra Taniskidou, E. (2017). [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
