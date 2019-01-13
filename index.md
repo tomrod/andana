@@ -20,9 +20,10 @@ I welcome your assistance in this journey. Email me @ narrative.wrangler(at)gmai
   {% for post in site.posts %}
   <article>
     <h3>
+     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> |
       <a href="{{ post.url }}">
         {{ post.title }}
-      </a> | <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> 
+      </a>
     </h3>
   </article>
 {% endfor %}

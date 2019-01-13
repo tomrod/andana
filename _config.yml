@@ -1,1 +1,16 @@
+title: "Andana: Data Sciences narratives, methods, and tales from the front-lines"
+email: narrative.wranger@gmail.com
+description: >
+  Storytelling is part of what makes us human. You participate in 
+  and tell stories daily. Sometimes they nest themselves to share 
+  something sublime, other times they share something highly technical. 
+  In no way is the narrative less important to the latter. 
+  Narrative is essential. And often, storytelling is a lost art in 
+  the data science space – yet, narratives run decision making in our 
+  world.
+url: "https://andana.me"
 theme: jekyll-theme-minimal
+twitter_username: tom_roderick
+github_username: tomrod
+
+
