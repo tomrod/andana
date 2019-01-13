@@ -12,7 +12,7 @@ Linear regression is a fundamental methodology used in virtually all quantitativ
 
 $$Y_i = \beta X_i + \epsilon_i$$
 
-where 
+where
 
 - $$Y_i$$ is the dependent variable
 - $$\beta$$ is a vector of $$k{\times}1$$ coefficients
@@ -23,7 +23,7 @@ Then, to find coefficients $$\beta$$, you find the expected value $$E(Y\|X)$$. T
 
 Linear regression's usefulness comes from it being the best linear unbiased estimator when a set of assumptions known as the [Gauss-Markov assumptions](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem) are satisfied. Basically:
 
-- Irreducible model error are mean zero
+- Irreducible model error is mean zero
 - Model errors conditioned on explanatory variables are mean zero, also called exogeneity.
 - Errors are homoskedastic -- at different regions of the input space error distributions are equal
 
