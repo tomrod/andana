@@ -160,7 +160,7 @@ for model_num in models:
     test_mse.append(v.ssres(test)/len(test.mpg))
 ```
 
-Finally, the relative fit for each of the models are plotted.
+Finally, the relative fit for each of the models are plotted. As you can see, the testing data identifies where the tradeoff between bias and variance tradeoff, while the training fit metrics continue to decrease.
 
 ```python
 plt.figure(figsize=(10,6))
@@ -174,6 +174,8 @@ plt.show()
 ```
 
 ![png](/assets/images/20190111_bias_variance.png)
+
+## Summary
 
 I hope you find this quick review of linear regression in Python using statsmodel to be helpful. To summarize what was accomplished:
 
