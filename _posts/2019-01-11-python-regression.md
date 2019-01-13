@@ -19,7 +19,7 @@ where
 - $$X_i$$ is a $$k{\times}1$$ vector of independent data
 - $$\epsilon_i$$ is normally distributed model error, $$\epsilon \sim N(0,\sigma^2)$$
 
-Then, to find coefficients $$\beta$$, you find the expected value $$E(Y|X)$$. This is equivalent to minimizing the sum of squared errors, $$\min_{\beta} ||Y-X\beta||$$.
+Then, to find coefficients $$\beta$$, you find the expected value $$E(Y\|X)$$. This is equivalent to minimizing the sum of squared errors, $$\min_{\beta} \|\|Y-X\beta\|\|$$.
 
 Linear regression's usefulness comes from it being the best linear unbiased estimator when a set of assumptions known as the [Gauss-Markov assumptions](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem) are satisfied. Basically:
 
