@@ -187,12 +187,12 @@ I hope you find this quick review of linear regression in Python using statsmode
 Each component is modular -- the data used, the models ran, the model methodology adopted, the test/train split, and so forth are substitutable.
 
 
-## Citations, Sources, and Footnotes
+## Footnotes
 
 
-[^1] Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+[^1] Dua, D. and Karra Taniskidou, E. (2017). [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
-[^2] http://archive.ics.uci.edu/ml/datasets/Auto+MPG
+[^2] [http://archive.ics.uci.edu/ml/datasets/Auto+MPG](http://archive.ics.uci.edu/ml/datasets/Auto+MPG)
 
 [^3] Categorical handling is actually one of the harder items to keep straight. It is good practice to double check this item during testing and code reviews. The Python package [`statsmodel`](https://www.statsmodels.org/dev/contrasts.html) handles at least four different types of categorical coding at time of writing.
 
