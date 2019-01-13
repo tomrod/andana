@@ -181,33 +181,33 @@ results = smf.ols(models[4], data=train).fit()
 results.summary()
 ```
 <table class="simpletable">
-<caption>`OLS Regression Results`</caption>
+<caption>OLS Regression Results</caption>
 <tr>
-  <th>`Dep. Variable:`</th>           <td>mpg</td>       <th>  `R-squared:`         </th> <td>   0.748</td>
+  <th>Dep. Variable:</th>           <td>mpg</td>       <th>  R-squared:         </th> <td>   0.748</td>
 </tr>
 <tr>
-  <th>`Model:`</th>                   <td>OLS</td>       <th>  `Adj. R-squared:`    </th> <td>   0.745</td>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th> <td>   0.745</td>
 </tr>
 <tr>
-  <th>`Method:`</th>             <td>Least Squares</td>  <th>  `F-statistic:`       </th> <td>   229.1</td>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   229.1</td>
 </tr>
 <tr>
-  <th>`Date:`</th>             <td>Sat, 12 Jan 2019</td> <th>  `Prob (F-statistic):`</th> <td>4.14e-91</td>
+  <th>Date:</th>             <td>Sun, 13 Jan 2019</td> <th>  Prob (F-statistic):</th> <td>4.14e-91</td>
 </tr>
 <tr>
-  <th>`Time:`</th>                 <td>14:40:05</td>     <th>  `Log-Likelihood:`    </th> <td> -882.64</td>
+  <th>Time:</th>                 <td>14:40:05</td>     <th>  Log-Likelihood:    </th> <td> -882.64</td>
 </tr>
 <tr>
-  <th>`No. Observations:`</th>      <td>   314</td>      <th>  `AIC:`               </th> <td>   1775.</td>
+  <th>No. Observations:</th>      <td>   314</td>      <th>  AIC:               </th> <td>   1775.</td>
 </tr>
 <tr>
-  <th>`Df Residuals:`</th>          <td>   309</td>      <th>  `BIC:`               </th> <td>   1794.</td>
+  <th>Df Residuals:</th>          <td>   309</td>      <th>  BIC:               </th> <td>   1794.</td>
 </tr>
 <tr>
-  <th>`Df Model:`</th>              <td>     4</td>      <th>                     </th>     <td> </td>   
+  <th>Df Model:</th>              <td>     4</td>      <th>                     </th>     <td> </td>   
 </tr>
 <tr>
-  <th>`Covariance Type:`</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>   
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>   
 </tr>
 </table>
 <table class="simpletable">
@@ -215,33 +215,33 @@ results.summary()
              <td></td>               <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>`Intercept`</th>              <td>  122.1702</td> <td>   13.326</td> <td>    9.168</td> <td> 0.000</td> <td>   95.949</td> <td>  148.391</td>
+  <th>Intercept</th>              <td>  122.1702</td> <td>   13.326</td> <td>    9.168</td> <td> 0.000</td> <td>   95.949</td> <td>  148.391</td>
 </tr>
 <tr>
-  <th>`weight`</th>                 <td>   -0.0025</td> <td>    0.001</td> <td>   -2.545</td> <td> 0.011</td> <td>   -0.004</td> <td>   -0.001</td>
+  <th>weight</th>                 <td>   -0.0025</td> <td>    0.001</td> <td>   -2.545</td> <td> 0.011</td> <td>   -0.004</td> <td>   -0.001</td>
 </tr>
 <tr>
-  <th>`displacement`</th>           <td>   -0.0074</td> <td>    0.007</td> <td>   -1.051</td> <td> 0.294</td> <td>   -0.021</td> <td>    0.006</td>
+  <th>displacement</th>           <td>   -0.0074</td> <td>    0.007</td> <td>   -1.051</td> <td> 0.294</td> <td>   -0.021</td> <td>    0.006</td>
 </tr>
 <tr>
-  <th>`np.log(acceleration)`</th>   <td>   -8.7205</td> <td>    2.361</td> <td>   -3.694</td> <td> 0.000</td> <td>  -13.365</td> <td>   -4.076</td>
+  <th>np.log(acceleration)</th>   <td>   -8.7205</td> <td>    2.361</td> <td>   -3.694</td> <td> 0.000</td> <td>  -13.365</td> <td>   -4.076</td>
 </tr>
 <tr>
-  <th>`np.log(horsepower_int)`</th> <td>  -14.3679</td> <td>    2.111</td> <td>   -6.807</td> <td> 0.000</td> <td>  -18.521</td> <td>  -10.215</td>
+  <th>np.log(horsepower_int)</th> <td>  -14.3679</td> <td>    2.111</td> <td>   -6.807</td> <td> 0.000</td> <td>  -18.521</td> <td>  -10.215</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>`Omnibus:`</th>       <td>30.199</td> <th>  `Durbin-Watson:`     </th> <td>   1.096</td>
+  <th>Omnibus:</th>       <td>30.199</td> <th>  Durbin-Watson:     </th> <td>   1.096</td>
 </tr>
 <tr>
-  <th>`Prob(Omnibus):`</th> <td> 0.000</td> <th>  `Jarque-Bera (JB):`  </th> <td>  41.477</td>
+  <th>Prob(Omnibus):</th> <td> 0.000</td> <th>  Jarque-Bera (JB):  </th> <td>  41.477</td>
 </tr>
 <tr>
-  <th>`Skew:`</th>          <td> 0.669</td> <th>  `Prob(JB):`          </th> <td>9.85e-10</td>
+  <th>Skew:</th>          <td> 0.669</td> <th>  Prob(JB):          </th> <td>9.85e-10</td>
 </tr>
 <tr>
-  <th>`Kurtosis:`</th>      <td> 4.174</td> <th>  `Cond. No.`          </th> <td>1.87e+05</td>
+  <th>Kurtosis:</th>      <td> 4.174</td> <th>  Cond. No.          </th> <td>1.87e+05</td>
 </tr>
 </table><br/>
 
