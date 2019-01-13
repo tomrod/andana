@@ -24,14 +24,14 @@ Then, to find coefficients $$\beta$$, you find the expected value $$E(Y\|X)$$. T
 Linear regression's usefulness comes from it being the best linear unbiased estimator when a set of assumptions known as the [Gauss-Markov assumptions](https://en.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem) are satisfied. Basically:
 
 - Irreducible model error are mean zero
-- Model errors conditioned on explanatory variables are mean zero \( exogeneity \)
+- Model errors conditioned on explanatory variables are mean zero, also called exogeneity.
 - Errors are homoskedastic -- at different regions of the input space error distributions are equal
 
 What does "Best Least Unbiased Estimator" mean? It means the statistical estimator with the least variance.
 
 If you're coming from another statistical language like R, Python can sometimes feel cumbersome. However, Python excels at producing code reproducibility--allowing for workflow standardization. This post will review Python's common least squares approaches, and provide some boilerplate workflow code.
 
-For this exercise we will use linear regression to build a model of miles per gallon \(mpg\) predicted by horsepower, engine cylinders, engine displacement, weight, acceleration, model year, origin, and car model. The data is sourced from the University of California Irvine's Donald Bren School of Information and Computer Science[^1] and has been used numerous times[^2].
+For this exercise we will use linear regression to build a model of miles per gallon--or *mpg*--predicted by horsepower, engine cylinders, engine displacement, weight, acceleration, model year, origin, and car model. The data is sourced from the University of California Irvine's Donald Bren School of Information and Computer Science[^1] and has been used numerous times[^2].
 
 ## Prequisites
 
@@ -54,9 +54,9 @@ The data source will be downloaded from the linked external site in a fixed-widt
 6. acceleration:  continuous
 7. model year:    multi-valued discrete
 8. origin:        multi-valued discrete
-9. car name:      string \(unique for each instance\)
+9. car name:      string--unique for each instance
 
-MPG (miles per gallon) is the regressand in our study. The remainder are regressors. Of these, 'multi-valued discrete' variables will be transformed to categorical variables. We will also drop all bad data represented by `np.nans`. We initialize and create the data using the following code.
+MPG is the regressand in our study. The remainder are regressors. Of these, 'multi-valued discrete' variables will be transformed to categorical variables. We will also drop all bad data represented by `np.nans`. We initialize and create the data using the following code.
 
 ```python
 import pandas as pd
@@ -190,7 +190,7 @@ Each component is modular -- the data used, the models ran, the model methodolog
 
 ## Footnotes
 
-[^1]: Dua, D. and Karra Taniskidou, E. (2017). [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
+[^1]: Dua, D. and Karra Taniskidou, E., 2017 . [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml). Irvine, CA: University of California, School of Information and Computer Science.
 
 [^2]: [http://archive.ics.uci.edu/ml/datasets/Auto+MPG](http://archive.ics.uci.edu/ml/datasets/Auto+MPG)
 
