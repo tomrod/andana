@@ -92,7 +92,7 @@ train = df_clean[msk]
 test = df_clean[~msk]
 ```
 
-Multiple models are generated using `statsmodels`' formula designation. Each of these strings will server as a model. the term `C( variable, Sum)` forces the model to use a Categorical designation[^3]. More specifically, the `Sum` input uses Deviation Coding, which separates the effect of the categorical variable classes from the intercept. A hold out is still used -- in this case, the value of the hold-out coefficient is the negative sum of all the other coefficients within the group. So for example, an 8-cylinder's MPG average will be the sum area of origin 3 will be area of origin 1 and 2's coefficient multiplied by `-1`.
+Multiple models are generated using `statsmodels`' formula designation. Each of these strings will server as a model. the term `C( variable, Sum)` forces the model to use a Categorical designation[^3]. More specifically, the `Sum` input uses Deviation Coding, which separates the effect of the categorical variable classes from the intercept. A hold out is still used -- in this case, the value of the hold-out coefficient is the negative sum of all the other coefficients within the group. So for example, the area of origin 3's coefficient will be the sum of origin 1 and 2's coefficient multiplied by `-1`.
 
 ```python
 models = {
