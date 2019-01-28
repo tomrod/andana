@@ -1,4 +1,4 @@
-  ---
+---
 layout: post
 title: "Apache Airflow using Python"
 author: "tomrod"
