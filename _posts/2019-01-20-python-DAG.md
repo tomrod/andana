@@ -28,7 +28,9 @@ Airflow is available through `conda`. With all technology testing, I recommend s
 ```bash
 $conda create -n sandbox python=3.7 anaconda
 ```
+
 2. Start your conda environment:
+
 ```bash
 $source activate sandbox~`
 
