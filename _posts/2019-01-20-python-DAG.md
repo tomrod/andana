@@ -107,8 +107,8 @@ As mentioned, DAGs are helpful for data scientists to schedule and run multiple 
 
 ## Footnotes
 
-[^1] https://airflow.apache.org/concepts.html
+[^1]: https://airflow.apache.org/concepts.html
 
-[^2] With all technology tutorials, be judicious. You don't want to blow up your base install in some way. Also, if you are new to the command line, the commands are everything after the dollar sign `$`.
+[^2]: With all technology tutorials, be judicious. You don't want to blow up your base install in some way. Also, if you are new to the command line, the commands are everything after the dollar sign `$`.
 
-[^3] Installing airflow will only install a wrapper. For the brave, use the `all` option or some other option as described [here](https://airflow.apache.org/installation.html).
+[^3]: Installing airflow will only install a wrapper. For the brave, use the `all` option or some other option as described [here](https://airflow.apache.org/installation.html).
