@@ -23,7 +23,7 @@ The nice thing about DAGs in Apache Airflow are that they are expressed in code 
 
 Airflow is available through `conda`. With all technology testing, I recommend sandboxing.[^2] The steps to get `airflow` installed in a sandbox using the Anaconda Python distribution are
 
-1. Create a Conda environment through the command line[^3]:
+1. Create a Conda environment through the command line:[^3]
 
 ```bash
 $conda create -n sandbox python=3.7 anaconda
