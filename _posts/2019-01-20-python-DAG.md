@@ -53,7 +53,7 @@ Let's use a DAG to
 
 3. Print test and training results.
 
-You can get prepared files here. I recommend storing in ``/home/$USER``, else the ``dag_example.py`` script will need modification.
+You can get prepared files [here](https://github.com/tomrod/andana/tree/master/assets/scripts/dag_example). I recommend storing in ``/home/$USER``, else the ``dag_example.py`` script will need modification.
 
 ## Running a DAG
 
