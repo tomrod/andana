@@ -23,7 +23,7 @@ The nice thing about DAGs in Apache Airflow are that they are expressed in code 
 
 Airflow is available through `conda`. With all technology testing, I recommend sandboxing.[^2] The steps to get `airflow` installed in a sandbox using the Anaconda Python distribution are
 
-* Create a Conda environment through the command line:[^3]
+* Create a ``conda`` environment through the command line:[^3]
 
 ```bash
 $conda create -n sandbox python=3.7 anaconda
@@ -99,15 +99,16 @@ In this post you have seen
 
 2. How to set up a virtual environment with conda
 
-2. How to install Apache Airflow
+3. How to install Apache Airflow
 
-3. How to initiate a directed acyclic graph (DAG)
+4. How to initiate a directed acyclic graph (DAG)
 
 As mentioned, DAGs are helpful for data scientists to schedule and run multiple and complex tasks. While it is often used for devops, its 
 
-
-
 ## Footnotes
+
 [^1] https://airflow.apache.org/concepts.html
+
 [^2] With all technology tutorials, be judicious. You don't want to blow up your base install in some way. Also, if you are new to the command line, the commands are everything after the dollar sign `$`.
+
 [^3] Installing airflow will only install a wrapper. For the brave, use the `all` option or some other option as described [here](https://airflow.apache.org/installation.html).
