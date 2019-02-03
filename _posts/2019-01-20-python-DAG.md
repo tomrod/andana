@@ -49,7 +49,7 @@ Let's use a DAG to
 
 1. Change a directory and download a prepared data set.
 
-2. Run a script that runs several regression models ([see prior post](https://andana.me/2019/01/11/python-regression.html)). Save ``regress.py`` to ``/home/$USER``. Save ``dag_example.py`` to  
+2. Run a script that runs several regression models ([see prior post](https://andana.me/2019/01/11/python-regression.html)).
 
 3. Print test and training results.
 
