@@ -25,6 +25,8 @@ Some of the principles are less clear or focused on 'FORTRAN' idiomatic expressi
 - *'Use IF...ELSE IF....ELSE IF....ELSE...' to implement multi-way branches.* Today we would say use case statements.
 - *Initialize contants with DATA statements or INITIAL attributes; initialize variables with executable code.* I don't actually know what an INITIAL attribute in FORTRAN is. I presume it has to do with initial assigned values.
 - *Use `GOTO`s only to implement a fundamental structure.*
+- *Avoid the `FORTRAN` arithmetic `IF`*
+
 
 ## The elements
 
@@ -37,7 +39,7 @@ Some of the principles are less clear or focused on 'FORTRAN' idiomatic expressi
 7. Replace repetitive expressions by calls to a common function.
 8. Parenthesize to avoid ambiguity.
 9. Choose variable names that won't be confused.
-10. Avoid the `FORTRAN` arithmetic IF
+10. Avoid the `FORTRAN` arithmetic `IF`
 11. Avoid unnecessary branches.
 12. Don't use conditional branches as a substitute for a logical expression.
 13. If a logical expression is hard to understand, try transforming it.
