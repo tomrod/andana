@@ -21,9 +21,9 @@ Many of the principles are clear
 - *Make it (right\|clear\|fail-safe) before making it faster*. Preoptimization is the root of all evil. Make sure what you do works before focusing on runtime speed.
 - *Make sure special cases are truly special*, *Take care to branch the right way on equality* and *Test programs at their boundary values.* For example, suppose you are using a `price` field in a dataset. Obviously `price` should never be zero or negative, since the item would sell at a loss. Yet -- you are assuming the upstream coder or data manager didn't do something clever. So instead of assuming it can never be zero, call it out as a special case.
 
-Some of the principles are less clear or focused on 'FORTRAN' idiomatic expression
-- *'Use IF...ELSE IF....ELSE IF....ELSE...' to implement multi-way branches.* Today we would say use case statements.
-- *Initialize contants with DATA statements or INITIAL attributes; initialize variables with executable code.* I don't actually know what an INITIAL attribute in FORTRAN is. I presume it has to do with initial assigned values.
+Some of the principles are less clear or focused on `FORTRAN` idiomatic expression
+- *Use `IF...ELSE IF....ELSE IF....ELSE...` to implement multi-way branches.* Today we would say use case statements.
+- *Initialize contants with DATA statements or INITIAL attributes; initialize variables with executable code.* I don't actually know what an INITIAL attribute in `FORTRAN` is. I presume it has to do with initial assigned values.
 - *Use `GOTO`s only to implement a fundamental structure.*
 - *Avoid the `FORTRAN` arithmetic `IF`*
 
