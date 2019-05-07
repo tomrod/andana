@@ -4,7 +4,7 @@ description: >
   Data science narratives, methods, and tales from the front-lines. 
   
 url: "https://andana.me"
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 twitter_username: tom_roderick
 github_username: tomrod
 
