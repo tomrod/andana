@@ -1,0 +1,40 @@
+[2019-01-27 20:24:22,423] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-01-27 20:24:22,424] {logging_mixin.py:95} INFO - [2019-01-27 20:24:22,423] {base_executor.py:56} INFO - Adding to queue: airflow run second_test run_regression 2019-01-27T00:00:00+00:00 --local -sd DAGS_FOLDER/second_test.py
+[2019-01-27 20:24:22,427] {logging_mixin.py:95} INFO - [2019-01-27 20:24:22,427] {sequential_executor.py:45} INFO - Executing command: airflow run second_test run_regression 2019-01-27T00:00:00+00:00 --local -sd DAGS_FOLDER/second_test.py
+[2019-01-27 20:24:23,594] {models.py:1361} INFO - Dependencies all met for <TaskInstance: second_test.run_regression 2019-01-27T00:00:00+00:00 [None]>
+[2019-01-27 20:24:23,603] {models.py:1361} INFO - Dependencies all met for <TaskInstance: second_test.run_regression 2019-01-27T00:00:00+00:00 [None]>
+[2019-01-27 20:24:23,604] {models.py:1573} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 4
+--------------------------------------------------------------------------------
+
+[2019-01-27 20:24:23,872] {models.py:1595} INFO - Executing <Task(BashOperator): run_regression> on 2019-01-27T00:00:00+00:00
+[2019-01-27 20:24:23,872] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run second_test run_regression 2019-01-27T00:00:00+00:00 --job_id 28 --raw -sd DAGS_FOLDER/second_test.py --cfg_path /tmp/tmpmkeu63ll']
+[2019-01-27 20:24:24,364] {base_task_runner.py:101} INFO - Job 28: Subtask run_regression [2019-01-27 20:24:24,363] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-01-27 20:24:24,694] {base_task_runner.py:101} INFO - Job 28: Subtask run_regression [2019-01-27 20:24:24,693] {models.py:271} INFO - Filling up the DagBag from /home/brute/Dropbox/Writing/Blog/andana/assets/notebooks/dags/second_test.py
+[2019-01-27 20:24:24,782] {base_task_runner.py:101} INFO - Job 28: Subtask run_regression [2019-01-27 20:24:24,782] {cli.py:484} INFO - Running <TaskInstance: second_test.run_regression 2019-01-27T00:00:00+00:00 [running]> on host localhost.localdomain
+[2019-01-27 20:24:24,793] {bash_operator.py:74} INFO - Tmp dir root location: 
+ /tmp
+[2019-01-27 20:24:24,794] {bash_operator.py:87} INFO - Temporary script location: /tmp/airflowtmp_2x0u9oe/run_regressionqannxiyi
+[2019-01-27 20:24:24,794] {bash_operator.py:97} INFO - Running command: python ~/regress.py
+[2019-01-27 20:24:24,798] {bash_operator.py:106} INFO - Output:
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - /home/brute/regress.py:59: SettingWithCopyWarning:
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - A value is trying to be set on a copy of a slice from a DataFrame.
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - Try using .loc[row_indexer,col_indexer] = value instead
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - 
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO -   df_clean['noise1'] = (np.random.rand(len(df_clean)) < .8)
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - /home/brute/regress.py:60: SettingWithCopyWarning:
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - A value is trying to be set on a copy of a slice from a DataFrame.
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - Try using .loc[row_indexer,col_indexer] = value instead
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - 
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO -   df_clean['noise2'] = (np.random.rand(len(df_clean)) < .8)
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - /home/brute/regress.py:61: SettingWithCopyWarning:
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - A value is trying to be set on a copy of a slice from a DataFrame.
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - Try using .loc[row_indexer,col_indexer] = value instead
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - 
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO - See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+[2019-01-27 20:24:25,974] {bash_operator.py:110} INFO -   df_clean['noise3'] = (np.random.rand(len(df_clean)) < .8)
+[2019-01-27 20:24:26,104] {bash_operator.py:114} INFO - Command exited with return code 0
+[2019-01-27 20:24:28,523] {logging_mixin.py:95} INFO - [2019-01-27 20:24:28,523] {jobs.py:2627} INFO - Task exited with return code 0

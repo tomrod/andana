@@ -1,0 +1,33 @@
+[2019-01-27 20:24:05,469] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-01-27 20:24:05,470] {logging_mixin.py:95} INFO - [2019-01-27 20:24:05,470] {base_executor.py:56} INFO - Adding to queue: airflow run second_test get_data 2019-01-27T00:00:00+00:00 --local -sd DAGS_FOLDER/second_test.py
+[2019-01-27 20:24:05,474] {logging_mixin.py:95} INFO - [2019-01-27 20:24:05,474] {sequential_executor.py:45} INFO - Executing command: airflow run second_test get_data 2019-01-27T00:00:00+00:00 --local -sd DAGS_FOLDER/second_test.py
+[2019-01-27 20:24:06,478] {models.py:1361} INFO - Dependencies all met for <TaskInstance: second_test.get_data 2019-01-27T00:00:00+00:00 [None]>
+[2019-01-27 20:24:06,480] {models.py:1361} INFO - Dependencies all met for <TaskInstance: second_test.get_data 2019-01-27T00:00:00+00:00 [None]>
+[2019-01-27 20:24:06,481] {models.py:1573} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 4
+--------------------------------------------------------------------------------
+
+[2019-01-27 20:24:06,708] {models.py:1595} INFO - Executing <Task(BashOperator): get_data> on 2019-01-27T00:00:00+00:00
+[2019-01-27 20:24:06,709] {base_task_runner.py:118} INFO - Running: ['bash', '-c', 'airflow run second_test get_data 2019-01-27T00:00:00+00:00 --job_id 27 --raw -sd DAGS_FOLDER/second_test.py --cfg_path /tmp/tmpqbrtyyme']
+[2019-01-27 20:24:07,212] {base_task_runner.py:101} INFO - Job 27: Subtask get_data [2019-01-27 20:24:07,211] {__init__.py:51} INFO - Using executor SequentialExecutor
+[2019-01-27 20:24:07,533] {base_task_runner.py:101} INFO - Job 27: Subtask get_data [2019-01-27 20:24:07,533] {models.py:271} INFO - Filling up the DagBag from /home/brute/Dropbox/Writing/Blog/andana/assets/notebooks/dags/second_test.py
+[2019-01-27 20:24:07,604] {base_task_runner.py:101} INFO - Job 27: Subtask get_data [2019-01-27 20:24:07,604] {cli.py:484} INFO - Running <TaskInstance: second_test.get_data 2019-01-27T00:00:00+00:00 [running]> on host localhost.localdomain
+[2019-01-27 20:24:07,618] {bash_operator.py:74} INFO - Tmp dir root location: 
+ /tmp
+[2019-01-27 20:24:07,619] {bash_operator.py:87} INFO - Temporary script location: /tmp/airflowtmp59cgp5jk/get_data6zr79zop
+[2019-01-27 20:24:07,619] {bash_operator.py:97} INFO - Running command: cd ~/ && wget http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data
+[2019-01-27 20:24:07,623] {bash_operator.py:106} INFO - Output:
+[2019-01-27 20:24:07,642] {bash_operator.py:110} INFO - --2019-01-27 20:24:07--  http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data
+[2019-01-27 20:24:07,696] {bash_operator.py:110} INFO - Resolving archive.ics.uci.edu (archive.ics.uci.edu)... 128.195.10.249
+[2019-01-27 20:24:07,748] {bash_operator.py:110} INFO - Connecting to archive.ics.uci.edu (archive.ics.uci.edu)|128.195.10.249|:80... connected.
+[2019-01-27 20:24:07,810] {bash_operator.py:110} INFO - HTTP request sent, awaiting response... 200 OK
+[2019-01-27 20:24:07,810] {bash_operator.py:110} INFO - Length: 30286 (30K) [text/plain]
+[2019-01-27 20:24:07,810] {bash_operator.py:110} INFO - Saving to: ‘auto-mpg.data.3’
+[2019-01-27 20:24:07,811] {bash_operator.py:110} INFO - 
+[2019-01-27 20:24:07,871] {bash_operator.py:110} INFO -      0K .......... .......... .........                       100%  481K=0.06s
+[2019-01-27 20:24:07,872] {bash_operator.py:110} INFO - 
+[2019-01-27 20:24:07,872] {bash_operator.py:110} INFO - 2019-01-27 20:24:07 (481 KB/s) - ‘auto-mpg.data.3’ saved [30286/30286]
+[2019-01-27 20:24:07,872] {bash_operator.py:110} INFO - 
+[2019-01-27 20:24:07,872] {bash_operator.py:114} INFO - Command exited with return code 0
+[2019-01-27 20:24:11,455] {logging_mixin.py:95} INFO - [2019-01-27 20:24:11,453] {jobs.py:2627} INFO - Task exited with return code 0

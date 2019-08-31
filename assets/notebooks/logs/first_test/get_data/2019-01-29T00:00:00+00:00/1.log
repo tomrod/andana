@@ -1,0 +1,5 @@
+[2019-01-27 11:55:40,624] {logging_mixin.py:95} INFO - Sending to executor.
+[2019-01-27 11:55:40,625] {logging_mixin.py:95} INFO - [2019-01-27 11:55:40,625] {base_executor.py:56} INFO - Adding to queue: airflow run first_test get_data 2019-01-29T00:00:00+00:00 --local -sd DAGS_FOLDER/.ipynb_checkpoints/DAG-checkpoint.py
+[2019-01-27 11:55:40,628] {logging_mixin.py:95} INFO - [2019-01-27 11:55:40,628] {sequential_executor.py:45} INFO - Executing command: airflow run first_test get_data 2019-01-29T00:00:00+00:00 --local -sd DAGS_FOLDER/.ipynb_checkpoints/DAG-checkpoint.py
+[2019-01-27 11:55:41,631] {models.py:1355} INFO - Dependencies not met for <TaskInstance: first_test.get_data 2019-01-29T00:00:00+00:00 [None]>, dependency 'Execution Date' FAILED: Execution date 2019-01-29T00:00:00+00:00 is in the future (the current date is 2019-01-27T17:55:41.631453+00:00).
+[2019-01-27 11:55:41,633] {logging_mixin.py:95} INFO - [2019-01-27 11:55:41,633] {jobs.py:2614} INFO - Task is not able to be run
